@@ -78,7 +78,18 @@ body
 	text-align: center;
 	padding-right: 120px;
 	padding-left: 120px;
-/*	padding-left: 120px;*/
+}
+
+#contMain2
+{
+	padding: 0;
+}
+
+#main2Div
+{
+	padding-right: 120px;
+	padding-left: 120px;
+	margin: 0 auto;
 }
 
 #contMain4
@@ -175,7 +186,8 @@ body
 
 #scrollDiv2
 {
-	position: absolute; 
+	position: absolute;
+	margin: 0 auto;
 	margin-top: 10px;
 	height: 10vh;
 	z-index: 1;
@@ -796,6 +808,12 @@ body
 	{
 		font-size: 15px;
 	}
+	
+	#main2Div
+	{
+		padding: 0;
+	}
+	
 	#contMain4
 	{
 		padding: inherit;
