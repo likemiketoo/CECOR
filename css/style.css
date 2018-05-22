@@ -1,0 +1,815 @@
+:root 
+{
+    --main-color:#52D273;
+    --secondary-color:#E5C453;
+    --main-black-color:#121212;
+    --main-grey-color:#5b5e63;
+    --main-white-color:#ededed;
+    --main-body-color:#fffef9;
+}
+
+body
+{
+	background: var(--main-body-color);
+	font-family: 'Poppins', sans-serif;
+	height: 420vh;
+	padding: 0;
+}
+
+#navRow
+{
+	position: fixed;
+	z-index: 10;
+	height: 100vh;
+	width: 150px;
+	/*background: #333333;*/
+	background: transparent;
+}
+
+#navRowInner
+{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	/*bottom: 0;*/
+}
+
+#navBtn
+{
+	color: #000000;
+	padding-left: 0;
+	transition: all .2s ease-in-out;
+}
+
+#navBtn:hover
+{
+	color: #fc1b3a;
+	transition: all .2s ease-in-out;
+}
+
+#cecorIcon
+{
+	background-image: url(/assets/cecorIcon.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	color: transparent;
+}
+
+#contMain
+{
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+/*	padding-left: 120px;*/
+}
+
+#contMain2, #contMain4
+{
+	background: #e3dfdb;
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+/*	padding-left: 120px;*/
+}
+
+#contMain4
+{
+	height: 120vh;
+	padding-right: 120px;
+	padding-left: 120px;
+}
+
+#contMain3
+{
+	background: var(--main-body-color);
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: center;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+#particles-js
+{
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	/*padding-left: 120px;*/
+    height: 100vh;
+	width: inherit;
+	overflow: hidden;
+}
+
+/*Moves stuff out of the way for menu*/
+#splashBoxOuter
+{
+	padding-left: 120px;
+}
+
+#splashBoxOuter
+{
+	height: 300px;
+	width: 100%;
+	padding: 0;
+	margin-top: 30vh;
+	z-index: 1;
+}
+
+#splashBoxInner
+{
+	
+	position: relative;
+	background-image: url(/assets/cecor.png);
+	background-size: cover;
+	background-position: center;
+	
+	font-size: 45px;
+	line-height: 45px;
+	height: 300px;
+	width: 300px;
+	padding: 0;
+	padding-top: 50px;
+	text-align: center;
+	border-radius: 15px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	z-index: 1;
+	transition: all .2s ease-in-out;
+
+	/*
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+	border-radius: 25px;
+	*/
+}
+
+#splashBoxInner:hover
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all .2s ease-in-out;
+	background-color: #f4cd32;
+}
+
+#scrollDiv
+{
+	position: absolute; 
+	bottom:0;
+	height: 10vh;
+	z-index: 1;
+}
+
+#scrollDiv2
+{
+	position: absolute; 
+	margin-top: 10px;
+	height: 10vh;
+	z-index: 1;
+}
+
+#scrollLink
+{
+    height: 100%;
+}
+
+#scrollBtn
+{
+    background: transparent;
+    height: 100%;
+    width: 55px;
+    opacity: 1;
+    text-align: center;
+	padding: 0;
+    margin: 0 auto;
+}
+
+#navArrow
+{
+    position: relative;
+    color: #000000;
+    font-size: 45px;
+    animation: navMove 1.7s infinite;
+	transition: all .2s ease-in-out;
+}
+
+#navArrow:hover
+{
+    color: #f4cd32;
+	transition: all .2s ease-in-out;
+}
+
+@keyframes navMove 
+{
+    0%
+    {
+        opacity: 0;
+        top: 0px;
+    }
+    
+    55%
+    {
+        opacity: 1;
+    }
+    
+    100%
+    {
+        opacity: 0;
+        top: 40px;
+    }
+}
+
+
+
+
+#aboutTitle1, #aboutTitle2, #aboutTitle3
+{
+/*	padding-left: 120px;*/
+	height: 70px;
+	padding-top: 10px;
+	
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+	text-decoration-line: underline;
+}
+
+#contSub
+{
+/*	padding-left: 120px;*/
+	margin-bottom: 30px;
+	color: #666666;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#aboutPic
+{
+	background-color: #fcfbf4;
+	background-image: url(/assets/Cyber%20Security%20Logo_CECOR_circleNew.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 1100px;
+	height: 29vh;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	/*border: 1px solid teal;*/
+}
+
+#aboutOuter
+{
+	padding-left: 40px;
+	padding-right: 40px;
+	
+/*	padding-left: 120px;*/
+}
+
+#aboutText
+{
+	text-align: left;
+	background-color: #ffffff;
+	height: 35vh;
+	max-width: 1100px;
+	padding: 20px;
+	font-size: calc(13px + (15 - 13) * ((100vw - 780px) / (1600 - 780)));
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	/*border: 1px solid teal;*/
+}
+
+
+.carousel-item
+{
+	height: 35vh;
+	background: #ffffff;
+	padding: 20px;
+	padding-right: 100px;
+	padding-left: 100px;
+	font-size: 20px;
+}
+
+#carouselExampleIndicators
+{
+	max-width: 1100px;
+	margin: 0 auto;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+	content: '>';
+	font-size: 55px;
+	color: grey;
+}
+
+.carousel-control-prev-icon:after
+{
+	content: '<';
+	font-size: 55px;
+	color: grey;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+#nsuLink
+{
+	text-decoration: none;
+	color: #52d273;
+	transition: all .2s ease-in-out;
+}
+
+#nsuLink:hover
+{
+	text-decoration: none;
+	color: #f4cd32;
+	transition: all .2s ease-in-out;
+}
+
+#partnRow
+{
+	height: 15vh;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#partnCol1, #partnCol2, #partnCol3, #partnCol4, #partnCol5, #partnCol6, #partnCol7, #partnCol8, #partnCol9, #partnCol10, #partnCol11, #partnCol12, #partnCol13, #partnCol14, #partnCol15, #partnCol16, #partnCol17
+{
+
+	padding: 5px;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	color: black;
+	transition: all .2s ease-in-out;
+/*	border: 1px solid blue;*/
+}
+
+#partnInnerRow
+{
+	background-color: var(--main-body-color);
+	padding: 5px;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all .2s ease-in-out;
+}
+
+#partnInnerRow:hover
+{
+	background-color: #ffffff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: all .2s ease-in-out;
+}
+
+#partnPic1, #partnText1, #partnPic2, #partnText2, #partnPic3, #partnText3, #partnPic4, #partnText4, #partnPic5, #partnText5, #partnPic6, #partnText6, #partnPic7, #partnText7, #partnPic8, #partnText8, #partnPic9, #partnText9, #partnPic10, #partnText10, #partnPic11, #partnText11, #partnPic12, #partnText12, #partnPic13, #partnText13, #partnPic14, #partnText14, #partnPic15, #partnText15, #partnPic16, #partnText16, #partnPic17, #partnText17
+{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#partnPic1
+{
+	background-image: url(/assets/allenu.png);
+}
+
+#partnPic2
+{
+	background-image: url(/assets/benedict.png);
+}
+
+#partnPic3
+{
+	background-image: url(/assets/bowie.png);
+}
+
+#partnPic4
+{
+	background-image: url(/assets/charleston.jpg);
+}
+
+#partnPic5
+{
+	background-image: url(/assets/Claflin-Logo.png);
+}
+
+#partnPic6
+{
+	background-image: url(/assets/clarkatl.png);
+}
+
+#partnPic7
+{
+	background-image: url(/assets/denmark.png);
+}
+
+#partnPic8
+{
+	background-image: url(/assets/llnatlab.jpg);
+}
+
+#partnPic9
+{
+	background-image: url(/assets/morris.png);
+}
+
+#partnPic10
+{
+	background-image: url(/assets/ncat.png);
+}
+
+#partnPic11
+{
+	background-image: url(/assets/nsuLogoFull.png);
+}
+
+#partnPic12
+{
+	background-image: url(/assets/paine.png);
+}
+
+#partnPic13
+{
+	background-image: url(/assets/sandia.png);
+}
+
+#partnPic14
+{
+	background-image: url(/assets/scstate.png);
+}
+
+#partnPic15
+{
+	background-image: url(/assets/spawar.png);
+}
+
+#partnPic16
+{
+	background-image: url(/assets/uvi.gif);
+}
+
+#partnPic17
+{
+	background-image: url(/assets/voorhees.gif);
+}
+
+#partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
+{
+	padding-top: 8%;
+	text-decoration: none;
+	color: black;
+	font-family: 'Poppins', sans-serif;
+	line-height: 16px;
+	font-size: 15px;
+	transition: all .2s ease-in-out;
+}
+
+#partnText8
+{
+	font-size: 13px;
+}
+
+#colLink
+{
+	text-decoration: none;
+}
+
+#partnCol1:hover #partnText1
+{
+	color: #F9D205;
+	transition: all .2s ease-in-out;
+}
+
+
+#partnCol2:hover #partnText2
+{
+	color: #533A8E;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol3:hover #partnText3
+{
+	color: #FBCC1A;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol4:hover #partnText4
+{
+	color: #789BA1;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol5:hover #partnText5
+{
+	color: #F58026;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol6:hover #partnText6
+{
+	color: #B72D3B;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol7:hover #partnText7
+{
+	color: #0000FE;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol8:hover #partnText8
+{
+	color: #3C6CB8;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol9:hover #partnText9
+{
+	color: #FEC248;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol10:hover #partnText10
+{
+	color: #FFB531;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol11:hover #partnText11
+{
+	color: #01795E;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol12:hover #partnText12
+{
+	color: #492F92;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol13:hover #partnText13
+{
+	color: #004577;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol14:hover #partnText14
+{
+	color: #731931;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol15:hover #partnText15
+{
+	color: #D60842;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol16:hover #partnText16
+{
+	color: #F1751F;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol17:hover #partnText17
+{
+	color: #0175C5;
+	transition: all .2s ease-in-out;
+}
+
+
+
+#pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
+{
+	padding: 0;
+	text-align: left;
+	font-size: 15px;
+}
+
+
+#partnCol1:hover #pplText1
+{
+	color: #F9D205;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol2:hover #pplText2
+{
+	color: #533A8E;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol3:hover #pplText3
+{
+	color: #FBCC1A;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol4:hover #pplText4
+{
+	color: #789BA1;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol5:hover #pplText5
+{
+	color: #F58026;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol6:hover #pplText6
+{
+	color: #B72D3B;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol7:hover #pplText7
+{
+	color: #0000FE;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol8:hover #pplText8
+{
+	color: #3C6CB8;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol9:hover #pplText9
+{
+	color: #FEC248;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol10:hover #pplText10
+{
+	color: #FFB531;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol11:hover #pplText11
+{
+	color: #01795E;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol12:hover #pplText12
+{
+	color: #492F92;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol13:hover #pplText13
+{
+	color: #004577;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol14:hover #pplText14
+{
+	color: #731931;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol15:hover #pplText15
+{
+	color: #D60842;
+	transition: all .2s ease-in-out;
+}
+
+#partnCol16:hover #pplText16
+{
+	color: #F1751F;	
+	transition: all .2s ease-in-out;
+}
+
+#partnCol17:hover #pplText17
+{
+	color: #0175C5;
+	transition: all .2s ease-in-out;
+}
+
+
+#pplText1 span, #pplText2 span, #pplText3 span, #pplText4 span, #pplText5 span, #pplText6 span, #pplText7 span, #pplText8 span, #pplText9 span, #pplText10 span, #pplText11 span, #pplText12 span, #pplText13 span, #pplText14 span, #pplText15 span, #pplText16 span, #pplText17 span
+{
+	color: black;
+}
+
+#pplText4
+{
+	font-size: 14px;
+}
+
+#pplPos
+{
+	font-weight: 500;
+}
+
+
+
+/*Changes font size and spacing for browser resize*/
+@media (max-width: 780px)
+{
+	body
+	{
+
+	}
+	
+	#contMain, #contMain3
+	{
+		padding: 0;
+
+	}
+	
+	#navRow
+	{
+		width: 100%;
+		height: 55px;
+		padding: 0;
+		background: #ffffff;
+		box-shadow: 0 20px 38px rgba(0,0,0,0.0), 0 15px 19px rgba(0,0,0,0.05);
+	}
+	
+	#navRowInner
+	{
+		position: relative;
+		width: 100%;
+		height: inherit;
+		margin: 0 auto;
+	}
+	
+	#splashBoxOuter
+	{
+		padding: 0;
+	}
+	
+	#particles-js
+	{
+		padding: 0;
+		padding-top: 55px;
+	}
+	
+	#aboutTitle
+	{
+		margin-top: 50px;
+	}
+	
+	#longTxt
+	{
+		font-size: 15px;
+	}
+	#contMain4
+	{
+		padding: inherit;
+	}
+
+	
+	#partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
+	{
+		font-size: 13px;
+	}
+	
+	#pplText4
+	{
+		font-size: 12px;
+		line-height: 12px;
+		overflow-wrap: break-word;
+	}
+}
+
+
