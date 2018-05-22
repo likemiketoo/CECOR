@@ -266,7 +266,7 @@ body
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	max-width: 1100px;
+	width: 100%;
 	height: 29vh;
 	margin-bottom: 20px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -286,7 +286,7 @@ body
 	text-align: left;
 	background-color: #ffffff;
 	height: 35vh;
-	max-width: 1100px;
+	width: 100%;
 	padding: 20px;
 	font-size: calc(13px + (15 - 13) * ((100vw - 780px) / (1600 - 780)));
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
