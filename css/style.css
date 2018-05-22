@@ -355,6 +355,11 @@ body
   background-color: #444;
 }
 
+#longTxt
+	{
+		font-size: 14px;
+	}
+
 #nsuLink
 {
 	text-decoration: none;
@@ -806,7 +811,7 @@ body
 	
 	#longTxt
 	{
-		font-size: 15px;
+		font-size: 13px;
 	}
 	
 	#main2Div
