@@ -8,7 +8,7 @@
     --main-body-color:#fffef9;
 }
 
-body
+#body1, #body2
 {
 	background: var(--main-body-color);
 	font-family: 'Poppins', sans-serif;
@@ -16,14 +16,20 @@ body
 	padding: 0;
 }
 
+#body2
+{
+	height: 100vh;
+}
+
 #navRow
 {
 	position: fixed;
 	z-index: 10;
 	height: 100vh;
-	width: 150px;
+	width: 135px;
 	/*background: #333333;*/
-	background: transparent;
+	background: rgba(255, 255, 255, .1);
+/*	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
 }
 
 #navRowInner
@@ -76,8 +82,8 @@ body
 	overflow: hidden;
 	padding: 0;
 	text-align: center;
-	padding-right: 120px;
-	padding-left: 120px;
+	padding-right: 130px;
+	padding-left: 130px;
 }
 
 #contMain2
@@ -95,8 +101,8 @@ body
 #contMain4
 {
 	height: 120vh;
-	padding-right: 120px;
-	padding-left: 120px;
+	padding-right: 130px;
+	padding-left: 130px;
 }
 
 #contMain3
@@ -108,8 +114,8 @@ body
 	overflow: hidden;
 	padding: 0;
 	text-align: center;
-	padding-left: 120px;
-	padding-right: 120px;
+	padding-left: 130px;
+	padding-right: 130px;
 }
 
 #particles-js
@@ -133,20 +139,32 @@ body
 	padding-left: 120px;
 }
 
-#splashBoxOuter
+#splashBoxOuter, #splashBoxOuter2
 {
 	height: 300px;
 	width: 100%;
 	padding: 0;
 	margin-top: 30vh;
 	z-index: 1;
+	text-align: center;
 }
+
+#splashBoxOuter2
+{
+	margin-top: 10vh;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
 
 #splashBoxInner
 {
 	
 	position: relative;
-	background-image: url(/assets/cecor.png);
+	/*	
+	background-image: url(/assets/cecorIcon.png);
+	*/
 	background-size: cover;
 	background-position: center;
 	
@@ -155,13 +173,16 @@ body
 	height: 300px;
 	width: 300px;
 	padding: 0;
-	padding-top: 50px;
 	text-align: center;
-	border-radius: 15px;
+	border-radius: 100px;
+	/*
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	*/
+	-webkit-filter: drop-shadow(0px 13px 15px #222);
+	filter: drop-shadow(0px 13px 15px #222);
 	z-index: 1;
 	transition: all .2s ease-in-out;
-
+	
 	/*
 	font-family: 'Poppins', sans-serif;
 	font-weight: 800;
@@ -171,9 +192,34 @@ body
 
 #splashBoxInner:hover
 {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	/*	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	*/
+	-webkit-filter: drop-shadow(0px 13px 10px #222);
+	filter: drop-shadow(0px 13px 10px #222);
 	transition: all .2s ease-in-out;
+	
+	/*	
 	background-color: #f4cd32;
+	*/
+}
+
+#splashBoxInner2
+{
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 150px;
+	padding-right: 150px;
+	/*	border: 1px solid red;*/
+}
+
+#splashInnerTitle
+{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	margin-top: 10px;
+	font-size: 22px;
 }
 
 #scrollDiv
@@ -308,21 +354,34 @@ body
 
 .carousel-item
 {
-	height: 35vh;
+	/*height: 35vh;*/
+	height: 100%;
+	width: 100;
+	margin: 0 auto;
 	background: #ffffff;
 	padding: 20px;
 	padding-right: 100px;
 	padding-left: 100px;
+	padding-bottom: 35px;
 	font-size: 20px;
+	text-align: center;
 }
 
-#carouselExampleIndicators
+#carouselExampleIndicators, #carouselExampleIndicators2
 {
-	max-width: 1100px;
 	margin: 0 auto;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+#caroInner1
+{
+	height: 600px;
+}
+
+#carouselExampleIndicators2
+{
+	height: 600px;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -346,19 +405,27 @@ body
 	color: grey;
 }
 
-.carousel-indicators li {
-  background-color: #999;
-  background-color: rgba(70,70,70,.25);
+.carousel-indicators li
+{
+  	background-color: #999;
+  	background-color: rgba(70,70,70,.25);
 }
 
-.carousel-indicators .active {
-  background-color: #444;
+.carousel-indicators .active 
+{
+  	background-color: #444;
+}
+
+.carousel-inner
+{
+	margin: 0 auto;
+	padding: 0 auto;
 }
 
 #longTxt
-	{
-		font-size: 14px;
-	}
+{
+	font-size: 14px;
+}
 
 #nsuLink
 {
@@ -372,6 +439,61 @@ body
 	text-decoration: none;
 	color: #f4cd32;
 	transition: all .2s ease-in-out;
+}
+
+#news1
+{
+	padding: 10px;
+}
+
+#newsItem1, #newsItem2
+{
+	height: 80%;
+	width: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#newsItem1
+{
+	background-image: url(/assets/phoneScreen.jpg);
+}
+
+#newsItem2
+{
+	background-image: url(/assets/hacker-typing.jpg);
+}
+
+#learnMoreOuter
+{
+	padding-top: 20px;
+	height: 20%;
+	width: 100%;
+	text-align: center;
+}
+
+#learnMoreBtn
+{
+	background: transparent;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/assets/TransparentPlaceholder.svg.png);
+	color: #67e01d;
+	border: 1px solid #67e01d;
+	transition: all .5s ease-in-out;
+}
+
+#learnMoreBtn:hover
+{
+	background-image: url(/assets/linear-green-gradient-blue.svg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	border: 1px solid #67e01d;
+	transition: all .3s ease-in-out;
 }
 
 #partnRow
@@ -760,6 +882,32 @@ body
 	font-weight: 500;
 }
 
+#calOuter
+{
+	position: absolute;
+	margin: 0 auto;
+	padding: 0;
+	padding-left: 150px;
+	padding-right: 150px;
+	/*
+	padding-left: 120px;
+	padding-right: 120px;
+	*/
+	z-index: 3;
+}
+
+#cal
+{
+	width: 100%;
+	height: 570px;
+	border: 0px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#calTitle
+{
+	margin-top: 100px;
+}
 
 
 /*Changes font size and spacing for browser resize*/
@@ -824,7 +972,6 @@ body
 		padding: inherit;
 	}
 
-	
 	#partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
 	{
 		font-size: 13px;
@@ -836,6 +983,13 @@ body
 		line-height: 12px;
 		overflow-wrap: break-word;
 	}
+	
+	#calOuter, #splashBoxInner2
+	{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	
 }
 
 
