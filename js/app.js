@@ -162,7 +162,6 @@ particlesJS('particles-js',
 
 );
 
-//Automatic Page scrolling
 var $root = $('html, body');
 
 $('#navBtn').click(function()
