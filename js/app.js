@@ -162,39 +162,12 @@ particlesJS('particles-js',
 
 );
 
-var $root = $('html, body');
 
-$('#navBtn').click(function()
+$("#menu-toggle").click(function(e)
 {
-	$root.animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top
-	}, 900);
-	return false;
-});
-
-$('#scrollAnim1').click(function()
-{
-	$root.animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top
-	}, 900);
-	return false;
-});
-
-$('#scrollAnim2').click(function()
-{
-	$root.animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top
-	}, 900);
-	return false;
-});
-
-$('#scrollAnim3').click(function()
-{
-	$root.animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top
-	}, 900);
-	return false;
-});
+	e.preventDefault();
+	$("#wrapper").toggleClass("toggled");
+ });
 
 $('.carousel').carousel({
     pause: true,
