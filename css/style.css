@@ -17,7 +17,7 @@ body
 
 #wrapper
 {
-	height: 420vh;
+	height: 520vh;
 	background: var(--main-body-color);
 	padding-left: 0;
 	padding-right: 0;
@@ -103,8 +103,8 @@ body
 #menuIconDiv:hover
 {
 	opacity: 1;
-	/*background: #414c56;*/
-	border: 1px solid #414c56;
+	background: #dbdbdb;
+	/*border: 1px solid #414c56;*/
 	transition: all .2s ease-in-out;
 }
 
@@ -212,7 +212,7 @@ body
 {
 	background: var(--main-body-color);
 	font-family: 'Poppins', sans-serif;
-	height: 420vh;
+	height: 520vh;
 	padding: 0;
 	overflow-x: hidden;
 }
@@ -275,9 +275,9 @@ body
 /*	padding-left: 120px;*/
 }
 
-#contMain2, #contMain4, #contMain5
+#contMain2, #contMain4, #contMain5, #contMain6
 {
-	background: #e3dfdb;
+	background: #dbdfe3;
 	height: 100vh;
 	width: 100vw;
 	margin: 0;
@@ -516,15 +516,15 @@ body
 
 #aboutPic
 {
-	background-color: #fcfbf4;
-	background-image: url(/assets/Cyber%20Security%20Logo_CECOR_circleNew.png);
+	/*background-color: #fcfbf4;*/
+	background-image: url(/assets/CECOR_circleUpdate.png);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 35vh;
+	height: 45vh;
 	margin-bottom: 20px;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 	/*border: 1px solid teal;*/
 }
 
@@ -532,7 +532,6 @@ body
 {
 	padding-left: 10px;
 	padding-right: 10px;
-	
 /*	padding-left: 120px;*/
 }
 
@@ -1174,6 +1173,106 @@ body
 	background-image: url(/assets/pictures/Picture8Crop.png);
 }
 
+#myModal1, #myModal2, #myModal3, #myModal4, #myModal5, #myModal6, #myModal7, #myModal8
+{
+	display: none;
+	position: fixed; /* Stay in place */
+    z-index: 2;
+	padding-top: 20px;
+	left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+#modalCont1, #modalCont2, #modalCont3, #modalCont4, #modalCont5, #modalCont6, #modalCont7, #modalCont8
+{
+	margin: auto;
+	margin-top: 100px;
+    display: block;
+	height: 70%;
+	max-width: 85vw;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+
+#modalCont1
+{
+	background-image:url(/assets/pictures/Picture2.png);
+}
+
+#modalCont2
+{
+	background-image:url(/assets/pictures/Picture1.png);
+}
+
+#modalCont3
+{
+	background-image:url(/assets/pictures/Picture3.png);
+}
+
+#modalCont4
+{
+	background-image:url(/assets/pictures/Picture4.png);
+}
+
+#modalCont5
+{
+	background-image:url(/assets/pictures/Picture5.png);
+}
+
+#modalCont6
+{
+	background-image:url(/assets/pictures/Picture6.png);
+}
+
+#modalCont7
+{
+	background-image:url(/assets/pictures/Picture7.jpg);
+}
+
+#modalCont8
+{
+	background-image:url(/assets/pictures/Picture8.jpg);
+}
+
+
+#closeBtn
+{
+	color: white;
+	font-size: 40px;
+	transition: all .2s ease-in-out;
+}
+
+#caption
+{
+	margin: auto;
+	height: 150px;
+	color: #ffffff;
+	padding: 10px;
+}
+
+#modalCont, #caption
+{
+	animation-name: zoomIn;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoomIn
+{
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+@keyframes zoomOut
+{
+    from {transform:scale(1)} 
+    to {transform:scale(0)}
+}
 
 /*Changes font size and spacing for browser resize*/
 /*
