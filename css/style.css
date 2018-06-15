@@ -289,6 +289,12 @@ body
 	
 }
 
+#contMain6
+{
+	padding-top: 50px;
+	background: #263033;
+}
+
 #main2Div
 {
 	margin: 0 auto;
@@ -1283,6 +1289,119 @@ body
 */
 
 
+#stats1, #stats2, #stats3
+{
+	height: 100px;
+	width: 100%;
+}
+
+#stats1
+{
+	background: #DC4C46;
+}
+
+#stats2
+{
+	background: #4F84C4;
+}
+
+#stats3
+{
+	background: #45B8AC;
+}
+
+svg.radial-progress
+{
+    height: 80%;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle
+{
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129; /* Circumference */
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete
+{
+    opacity: 0.25;
+}
+
+svg.radial-progress circle.complete
+{
+    stroke-dasharray: 219.91148575129; /* Circumference */
+}
+
+svg.radial-progress text
+{
+    fill: #fff;
+    font: 400 1em/1 'Oswald', sans-serif;
+    text-anchor: middle;
+}
+
+#statRow
+{
+	margin-bottom: 30px;
+	/*border: 1px solid white;*/
+}
+
+#statNum, #statNum2
+{
+	height: auto;
+	color: white;
+	font-weight: 500;
+	font-size: 100px;
+}
+
+#statNum2
+{
+	background-image: url(/assets/TieColor.png);
+	background-size: contain;
+	background-position: center;
+}
+
+#statChart1
+{
+	stroke: #fcaeae;
+}
+
+#statChart2
+{
+	stroke: #ff8787;
+}
+
+#statChart3
+{
+	stroke: #f96363;
+}
+
+#statChart4
+{
+	stroke: #f95252;
+}
+
+#statTitle
+{
+	font-family: 'Poppins', sans-serif;
+	margin: 0 auto;
+	color: white;
+	background: transparent;
+	font-size: 20px;
+}
+
+#statCaption
+{
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+
+
 @media(min-width:768px)
 {
 	#wrapper
@@ -1387,5 +1506,10 @@ body
 	{
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	
+	#statTitle
+	{
+		font-size: 20px;
 	}
 }
