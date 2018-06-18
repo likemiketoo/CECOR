@@ -15,9 +15,10 @@ body
 	margin: 0;
 }
 
-#wrapper
+
+.wrapp
 {
-	height: 520vh;
+	height: 400vh;
 	background: var(--main-body-color);
 	padding-left: 0;
 	padding-right: 0;
@@ -30,7 +31,12 @@ body
 	transition: all 0.5s ease;
 }
 
-#wrapper.toggled
+#wrapper2, #wrapper3
+{
+	height: 200vh;
+}
+
+.wrapp.toggled
 {
 	padding-left: 250px;
 }
@@ -52,7 +58,7 @@ body
 	transition: all 0.5s ease;
 }
 
-#wrapper.toggled #sidebar-wrapper
+.wrapp.toggled #sidebar-wrapper
 {
 	width: 250px;
 }
@@ -67,7 +73,7 @@ body
 	brder: 2px solid red;
 }
 
-#wrapper.toggled #page-content-wrapper
+.wrapp.toggled #page-content-wrapper
 {
 	position: absolute;
 	margin-right: -250px;
@@ -136,14 +142,14 @@ body
 	transition: all .2s ease-in-out;
 }
 
-#wrapper.toggled #menuIconDiv:hover #menuLineTop
+.wrapp.toggled #menuIconDiv:hover #menuLineTop
 {
 	width: 35%;
 	background: black;
 	transform: rotate(-30deg)translate(-6px, 1px);
 }
 
-#wrapper.toggled #menuIconDiv:hover #menuLineBot
+.wrapp.toggled #menuIconDiv:hover #menuLineBot
 {
 	width: 35%;
 	background: black;
@@ -324,6 +330,12 @@ body
 	background: var(--main-body-color);
 }
 
+#topSpace
+{
+	height: 50px;
+	width: 100%;
+}
+
 #particles-js
 {
     position: absolute;
@@ -337,12 +349,6 @@ body
     height: 100vh;
 	width: inherit;
 	overflow: hidden;
-}
-
-/*Moves stuff out of the way for menu*/
-#splashBoxOuter
-{
-	
 }
 
 #splashBoxOuter, #splashBoxOuter2
@@ -374,7 +380,7 @@ body
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 450px;
+	height: 55vh;
 	width: 300px;
 	padding: 0;
 	text-align: center;
@@ -435,7 +441,6 @@ body
 
 #scrollDiv2
 {
-	position: absolute;
 	margin: 0 auto;
 	margin-top: 10px;
 	height: 10vh;
@@ -499,7 +504,7 @@ body
 #aboutTitle1, #aboutTitle2, #aboutTitle3
 {
 /*	padding-left: 120px;*/
-	height: 70px;
+	height: 7vh;
 	padding-top: 10px;
 	
 	text-align: center;
@@ -520,6 +525,23 @@ body
 	font-size: 20px;
 }
 
+.carousel-inner
+{
+	height: 25vh;
+}
+
+#aboutOuter
+{
+	padding-left: 10px;
+	padding-right: 10px;
+/*	padding-left: 120px;*/
+}
+
+#aboutOuterT
+{
+	
+}
+
 #aboutPic
 {
 	/*background-color: #fcfbf4;*/
@@ -534,12 +556,7 @@ body
 	/*border: 1px solid teal;*/
 }
 
-#aboutOuter
-{
-	padding-left: 10px;
-	padding-right: 10px;
-/*	padding-left: 120px;*/
-}
+
 
 #aboutText
 {
@@ -573,6 +590,12 @@ body
 {
 	margin: 0 auto;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#carouselExampleIndicators2
+{
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #caroInner1
@@ -1095,9 +1118,9 @@ body
 	position: absolute;
 	margin: 0 auto;
 	padding: 0;
-	padding-left: 10px;
-	padding-right: 10px;
-	z-index: 3;
+	padding-left: 20px;
+	padding-right: 20px;
+	z-index: 1;
 }
 
 #cal
@@ -1113,9 +1136,17 @@ body
 	margin-top: 100px;
 }
 
+#picsOuter
+{
+	height:100%;
+	padding: 0;
+	margin: 0 auto;
+	border: 1px solid green;
+}
+
 #picRow
 {
-	height: 33.3vh;
+	height: 27vh;
 	margin: 0 auto;
 }
 
@@ -1347,12 +1378,13 @@ svg.radial-progress text
 #statRow
 {
 	margin-bottom: 30px;
+	height: 22vh;
 	/*border: 1px solid white;*/
 }
 
 #statNum, #statNum2
 {
-	height: auto;
+	height: 80%;
 	color: white;
 	font-weight: 500;
 	font-size: 100px;
@@ -1363,6 +1395,7 @@ svg.radial-progress text
 	background-image: url(/assets/TieColor.png);
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 #statChart1

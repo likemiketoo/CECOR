@@ -165,7 +165,7 @@ particlesJS('particles-js',
 
 var $root = $('html, body');
 
-//Animates slide ou menu
+//Animates scrolling arrow butons
 $('#navBtn').click(function()
 {
 	$root.animate({
@@ -198,11 +198,19 @@ $('#scrollAnim3').click(function()
 	return false;
 });
 
+$('#scrollAnim4').click(function()
+{
+	$root.animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 900);
+	return false;
+});
 
+//Animates slide ou menu
 $("#menu-toggle").click(function(e)
 {
 	e.preventDefault();
-	$("#wrapper").toggleClass("toggled");
+	$(".wrapp").toggleClass("toggled");
  });
 
 //$('.carousel').carousel({
@@ -351,7 +359,7 @@ $(".close").click(function()
 });
 
 
-
+//Progress circle
 $(function(){
 
     // Remove svg.radial-progress .complete inline styling
@@ -377,9 +385,200 @@ $(function(){
                 // Get stroke-dashoffset value based on the percentage of the circumference
                 strokeDashOffset = circumference - ((percent * circumference) / 100);
                 // Transition progress for 1.25 seconds
-                $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 1250);
+                $(this).find($('circle.complete')).animate({'stroke-dashoffset': strokeDashOffset}, 2050);
             }
         });
+		
+		
     }).trigger('scroll');
 
 });
+
+
+//Boolean switches to make each loop run once so number iteration does keep going
+var executed1 = false;
+var executed2 = false;
+var executed3 = false;
+var executed4 = false;
+var executed5 = false;
+var executed6 = false;
+var executed7 = false;
+var executed8 = false;
+
+// Activate progress animation on scroll
+$(window).scroll(function(){
+	$('.statCounter1').each(function()
+	{ 
+		// If div is approximately 25% vertically into the window when scrolling from the top or the bottom
+		if ( 
+			$(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
+			$(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
+		) {
+			
+			$('.statCounter1').each(function() 
+			{
+				if (!executed1)
+				{
+					executed1 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2000,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});	
+			
+			$('.statCounter2').each(function() 
+			{
+				if (!executed2)
+				{
+					executed2 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2000,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});	
+			
+			$('.statCounter3').each(function() 
+			{
+				if (!executed3)
+				{
+					executed3 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2000,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});
+			
+			$('.statCounter4').each(function() 
+			{
+				if (!executed4)
+				{
+					executed4 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2000,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});
+		}
+	});
+}).trigger('scroll');
+
+
+// Activate progress animation on scroll
+$(window).scroll(function(){
+	$('.statCounterTie1').each(function()
+	{ 
+		if ( 
+			$(window).scrollTop() > $(this).offset().top - ($(window).height() * 0.75) &&
+			$(window).scrollTop() < $(this).offset().top + $(this).height() - ($(window).height() * 0.25)
+		) {
+			
+			$('.statCounterTie1').each(function() 
+			{
+				if (!executed5)
+				{
+					executed5 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2500,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});	
+			
+			$('.statCounterTie2').each(function() 
+			{
+				if (!executed6)
+				{
+					executed6 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2500,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});	
+			
+			$('.statCounterTie3').each(function() 
+			{
+				if (!executed7)
+				{
+					executed7 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2500,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});
+			
+			$('.statCounterTie4').each(function() 
+			{
+				if (!executed8)
+				{
+					executed8 = true;
+					$(this).prop('Counter',0).animate(
+					{
+						Counter: $(this).text()
+					}, {
+						duration: 2500,
+						easing: 'swing',
+						step: function (now)
+						{
+							$(this).text(Math.ceil(now));
+						}
+					});
+				};
+			});
+		}
+	});
+}).trigger('scroll');
