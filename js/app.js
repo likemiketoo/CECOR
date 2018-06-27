@@ -582,3 +582,20 @@ $(window).scroll(function(){
 		}
 	});
 }).trigger('scroll');
+
+//Hides menu on scroll
+var prevScrollpos = 1;
+$(window).scroll(function()
+{
+	var currentScrollPos = window.pageYOffset;
+	if (prevScrollpos > currentScrollPos)
+	{
+		document.getElementById('menuDiv').style.top = "0";
+	}
+	
+	else
+	{
+		document.getElementById('menuDiv').style.top = "-50px";
+	}
+	prevScrollpos = currentScrollPos;
+});

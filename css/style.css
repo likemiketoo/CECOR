@@ -88,6 +88,8 @@ body
 	width: 100%;
 	z-index: 2;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 10px rgba(0,0,0,0.24);
+	
+	transition: top .5s ease-in-out;
 }
 
 #menuIconDiv
@@ -290,9 +292,8 @@ body
 	overflow: hidden;
 	padding: 0;
 	text-align: center;
-	padding-right: 27px;
+	padding-right: 10px;
 	padding-left: 10px;
-	
 }
 
 #contMain6
@@ -310,6 +311,7 @@ body
 #contMain4
 {
 	height: 120vh;
+	padding: 0;
 }
 
 #contMain3
@@ -322,7 +324,7 @@ body
 	padding: 0;
 	text-align: center;
 	padding-left: 10px;
-	padding-right: 27px;
+	padding-right: 10px;
 }
 
 #contMain5
@@ -434,7 +436,7 @@ body
 #scrollDiv
 {
 	position: absolute; 
-	bottom:0;
+	bottom: 0;
 	height: 10vh;
 	z-index: 1;
 }
@@ -465,7 +467,7 @@ body
 
 #navArrow
 {
-    position: relative;
+	position: relative;
     color: #000000;
     font-size: 45px;
     animation: navMove 1.7s infinite;
@@ -474,7 +476,7 @@ body
 
 #navArrow:hover
 {
-    color: #f4cd32;
+    color: #434a56;
 	transition: all .2s ease-in-out;
 }
 
@@ -494,12 +496,9 @@ body
     100%
     {
         opacity: 0;
-        top: 40px;
+        top: 30px;
     }
 }
-
-
-
 
 #aboutTitle1, #aboutTitle2, #aboutTitle3
 {
@@ -539,7 +538,7 @@ body
 
 #aboutOuterT
 {
-	
+	padding: 0;
 }
 
 #aboutPic
@@ -550,7 +549,7 @@ body
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 45vh;
+	height: 40vh;
 	margin-bottom: 20px;
 	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
 	/*border: 1px solid teal;*/
@@ -579,10 +578,11 @@ body
 	margin: 0 auto;
 	background: #ffffff;
 	padding: 20px;
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
 	padding-bottom: 35px;
-	font-size: 20px;
+	font-size: 14px;
 	text-align: center;
 }
 
@@ -590,6 +590,7 @@ body
 {
 	margin: 0 auto;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	text-align: center;
 }
 
 #carouselExampleIndicators2
@@ -614,6 +615,7 @@ body
 	width: 100px;
 	background-size: 100%, 100%;
 	background-image: none;
+	text-align: center;
 	
 }
 
@@ -622,6 +624,7 @@ body
 	content: '>';
 	font-size: 55px;
 	color: grey;
+	opacity: .3;
 }
 
 .carousel-control-prev-icon:after
@@ -629,6 +632,7 @@ body
 	content: '<';
 	font-size: 55px;
 	color: grey;
+	opacity: .3;
 }
 
 .carousel-indicators li
@@ -650,7 +654,7 @@ body
 
 #longTxt
 {
-	font-size: 14px;
+	font-size: 8px;
 }
 
 #nsuLink
@@ -667,30 +671,8 @@ body
 	transition: all .2s ease-in-out;
 }
 
-#news1
-{
-	padding: 10px;
-}
 
-#newsItem1, #newsItem2
-{
-	height: 80%;
-	width: 100%;
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-#newsItem1
-{
-	background-image: url(/assets/phoneScreen.jpg);
-}
-
-#newsItem2
-{
-	background-image: url(/assets/hacker-typing.jpg);
-}
-
+/*
 #learnMoreOuter
 {
 	padding-top: 20px;
@@ -721,6 +703,7 @@ body
 	border: 1px solid #67e01d;
 	transition: all .3s ease-in-out;
 }
+*/
 
 #partnRow
 {
@@ -764,7 +747,7 @@ body
 	padding: 0;
 	margin: 0 auto;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	text-align: center;
 	background-position: center;
 	background-size: contain;
@@ -858,23 +841,18 @@ body
 
 #partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
 {
-	padding-top: 8%;
+	padding-top: 0;
 	text-decoration: none;
 	color: black;
 	font-family: 'Poppins', sans-serif;
-	line-height: 16px;
-	font-size: 15px;
+	line-height: 11px;
+	font-size: 9px;
 	transition: all .2s ease-in-out;
-}
-
-#pplText1 a, #pplText2 a, #pplText3 a, #pplText4 a, #pplText5 a, #pplText6 a, #pplText7 a, #pplText8 a, #pplText9 a, #pplText10 a, #pplText11 a, #pplText12 a, #pplText13 a, #pplText14 a, #pplText15 a, #pplText16 a, #pplText17 a
-{
-	font-size: 12px;
 }
 
 #partnText8
 {
-	font-size: 13px;
+	font-size: 9px;
 }
 
 #colLink
@@ -986,14 +964,24 @@ body
 }
 
 
-
 #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
 {
 	padding: 0;
 	text-align: left;
-	font-size: 15px;
+	font-size: 9px;
+	line-height: 9px;
+	overflow:scroll;
 }
 
+#pplText16
+{
+	font-size: 8px;
+}
+
+#pplText1 a, #pplText2 a, #pplText3 a, #pplText4 a, #pplText5 a, #pplText6 a, #pplText7 a, #pplText8 a, #pplText9 a, #pplText10 a, #pplText11 a, #pplText12 a, #pplText13 a, #pplText14 a, #pplText15 a, #pplText16 a, #pplText17 a
+{
+	font-size: 7px;
+}
 
 #partnCol1:hover #pplText1
 {
@@ -1126,7 +1114,7 @@ body
 #cal
 {
 	width: 100%;
-	height: 570px;
+	height: 500px;
 	border: 0px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -1343,9 +1331,9 @@ body
 
 svg.radial-progress
 {
-    height: 80%;
+    height: 60%;
     max-width: 200px;
-    padding: 1em;
+    padding: 0;
     transform: rotate(-90deg);
     width: 100%;
 }
@@ -1377,25 +1365,31 @@ svg.radial-progress text
 
 #statRow
 {
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	height: 22vh;
 	/*border: 1px solid white;*/
 }
 
-#statNum, #statNum2
+#statNum, #statNum2, #statNum2l
 {
-	height: 80%;
+	height: 60%;
 	color: white;
 	font-weight: 500;
-	font-size: 100px;
+	font-size: 60px;
 }
 
-#statNum2
+#statNum2, #statNum2l
 {
 	background-image: url(/assets/TieColor.png);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+#statNum2l
+{ 
+	padding-top: 15px;
+	font-size: 40px;
 }
 
 #statChart1
@@ -1424,18 +1418,41 @@ svg.radial-progress text
 	margin: 0 auto;
 	color: white;
 	background: transparent;
-	font-size: 20px;
+	font-size: 13px;
+	padding: 0;
 }
 
 #statCaption
 {
 	font-family: 'Poppins', sans-serif;
 	color: white;
+	font-size: 15px;
+	padding: 0;
 }
 
 
 
-@media(min-width:768px)
+
+
+/*
+@media(min-width:600px)
+{
+	.carousel-item
+	{
+		font-size: 20px;
+		text-align: center;
+	}
+	
+	#longTxt
+	{
+		font-size: 15px;
+	}
+}
+*/
+
+
+
+@media(min-width:668px)
 {
 	#wrapper
 	{
@@ -1469,10 +1486,11 @@ svg.radial-progress text
 		margin-right: 0;
 	}
 	
-	#contMain, #contMain2, #contMain3, #contMain4
+	#contMain, #contMain2, #contMain3, #contMain4, #contMain5, #contMain6
 	{
 		padding: 0;
-
+		padding-right: 27px;
+		padding-left: 10px;
 	}
 	
 	#navRow
@@ -1497,6 +1515,26 @@ svg.radial-progress text
 		padding: 0;
 	}
 	
+	@keyframes navMove 
+	{
+		0%
+		{
+			opacity: 0;
+			top: 0px;
+		}
+
+		55%
+		{
+			opacity: 1;
+		}
+
+		100%
+		{
+			opacity: 0;
+			top: 40px;
+		}
+	}
+	
 	#particles-js
 	{
 		padding: 0;
@@ -1506,6 +1544,42 @@ svg.radial-progress text
 	#aboutTitle
 	{
 		margin-top: 60px;
+	}
+	
+	#aboutPic
+	{
+		height: 45vh;
+	}
+	
+	.carousel-control-next-icon:after
+	{
+		content: '>';
+		font-size: 55px;
+		color: grey;
+		opacity: inherit;
+	}
+
+	.carousel-control-prev-icon:after
+	{
+		content: '<';
+		font-size: 55px;
+		color: grey;
+		opacity: inherit;
+	}
+	
+	.carousel-item
+	{
+		/*height: 35vh;*/
+		height: 100%;
+		width: 100;
+		margin: 0 auto;
+		background: #ffffff;
+		padding: 20px;
+		padding-right: 100px;
+		padding-left: 100px;
+		padding-bottom: 35px;
+		font-size: 20px;
+		text-align: center;
 	}
 	
 	#longTxt
@@ -1525,8 +1599,36 @@ svg.radial-progress text
 
 	#partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
 	{
+		padding-top: 8%;
 		font-size: 13px;
 	}
+	
+	#partnPic1, #partnText1, #partnPic2, #partnText2, #partnPic3, #partnText3, #partnPic4, #partnText4, #partnPic5, #partnText5, #partnPic6, #partnText6, #partnPic7, #partnText7, #partnPic8, #partnText8, #partnPic9, #partnText9, #partnPic10, #partnText10, #partnPic11, #partnText11, #partnPic12, #partnText12, #partnPic13, #partnText13, #partnPic14, #partnText14, #partnPic15, #partnText15, #partnPic16, #partnText16, #partnPic17, #partnText17
+	{
+		padding: 0;
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	
+	#partnText8
+	{
+		font-size: 13px;
+	}
+	
+	#pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
+	{
+		padding: 0;
+		text-align: left;
+		font-size: 15px;
+		line-height: inherit;
+	}
+	
+	
 	
 	#pplText4
 	{
@@ -1535,14 +1637,61 @@ svg.radial-progress text
 		overflow-wrap: break-word;
 	}
 	
+	
+	
+	svg.radial-progress
+	{
+		height: 60%;
+		max-width: 200px;
+		padding: .2em;
+		transform: rotate(-90deg);
+		width: 100%;
+	}
+	
+	#cal
+	{
+		width: 100%;
+		height: 570px;
+		border: 0px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+	
 	#calOuter, #splashBoxInner2
 	{
 		padding-left: 30px;
 		padding-right: 30px;
 	}
 	
+	#statRow
+	{
+		margin-bottom: 30px;
+		height: 22vh;
+		/*border: 1px solid white;*/
+	}
+	
 	#statTitle
 	{
 		font-size: 20px;
 	}
+	
+	#statNum, #statNum2, #statNum2l
+	{
+		height: 80%;
+		font-weight: 500;
+		font-size: 100px;
+	}
+	
+	#statNum
+	{
+		height: 70%;
+		padding: 0;
+	}
+	
+	#statNum2l
+	{
+		font-size: 85px;
+	}
+		
 }
+
+
