@@ -297,7 +297,7 @@ body
 
 #contMain7
 {
-	height: 75%;
+	height: 80%;
 }
 
 #contMain3
@@ -504,7 +504,7 @@ body
     }
 }
 
-#aboutTitle1, #aboutTitle2, #aboutTitle3
+#aboutTitle1, #aboutTitle2, #aboutTitle3, #aboutTitle4
 {
 /*	padding-left: 120px;*/
 	height: 7vh;
@@ -516,6 +516,11 @@ body
 	font-weight: 00;
 	font-family: 'Poppins', sans-serif;
 	text-decoration:none;
+}
+
+#aboutTitle4
+{
+	font-size: 25px;
 }
 
 #contSub
@@ -1106,6 +1111,32 @@ body
 	font-weight: 500;
 }
 
+#emailDiv
+{
+	text-align: center;
+	width: 100%;
+	background: transparent;
+	color: #9CCC65;
+	border: 1px solid #9CCC65;
+	transition: all .2s ease-in-out;
+}
+
+#emailDiv:hover
+{
+	background: #9CCC65;
+	color: white;
+	transition: all .2s ease-in-out;
+}
+
+
+#emailTxt
+{
+	font-size: 12px;
+	padding: 0;
+	margin: 0 auto;
+	
+}
+
 
 
 
@@ -1122,7 +1153,7 @@ body
 #cal
 {
 	width: 100%;
-	height: 500px;
+	height: 480px;
 	border: 0px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -1231,7 +1262,6 @@ body
 #picCol
 {
 	padding: 5px;
-
 }
 
 #picCol1, #picCol2, #picCol3, #picCol4, #picCol5, #picCol6, #picCol7, #picCol8
@@ -1639,6 +1669,11 @@ svg.radial-progress text
 	#aboutTitle
 	{
 		margin-top: 60px;
+	}
+	
+	#aboutTitle1, #aboutTitle2, #aboutTitle3, #aboutTitle4
+	{
+		font-size: 30px;
 	}
 	
 	#aboutPic
