@@ -88,7 +88,6 @@ body
 	width: 100%;
 	z-index: 2;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 10px rgba(0,0,0,0.24);
-	
 	transition: top .5s ease-in-out;
 }
 
@@ -283,7 +282,7 @@ body
 /*	padding-left: 120px;*/
 }
 
-#contMain2, #contMain4, #contMain5, #contMain6
+#contMain2, #contMain4, #contMain5, #contMain6, #contMain7
 {
 	background: #dbdfe3;
 	height: 100vh;
@@ -296,22 +295,9 @@ body
 	padding-left: 10px;
 }
 
-#contMain6
+#contMain7
 {
-	padding-top: 50px;
-	background: #263033;
-}
-
-#main2Div
-{
-	margin: 0 auto;
-	padding: 0;
-}
-
-#contMain4
-{
-	height: 120vh;
-	padding: 0;
+	height: 75%;
 }
 
 #contMain3
@@ -327,9 +313,28 @@ body
 	padding-right: 10px;
 }
 
+#contMain4
+{
+	height: 120vh;
+	padding: 0;
+}
+
 #contMain5
 {
 	background: var(--main-body-color);
+}
+
+
+#contMain6
+{
+	padding-top: 50px;
+	background: #263033;
+}
+
+#main2Div
+{
+	margin: 0 auto;
+	padding: 0;
 }
 
 #topSpace
@@ -444,7 +449,6 @@ body
 #scrollDiv2
 {
 	margin: 0 auto;
-	margin-top: 10px;
 	height: 10vh;
 	z-index: 1;
 }
@@ -505,6 +509,7 @@ body
 /*	padding-left: 120px;*/
 	height: 7vh;
 	padding-top: 10px;
+	margin-bottom: 10px;
 	
 	text-align: center;
 	font-size: 30px;
@@ -654,7 +659,7 @@ body
 
 #longTxt
 {
-	font-size: 8px;
+	font-size: 9px;
 }
 
 #nsuLink
@@ -846,7 +851,7 @@ body
 	color: black;
 	font-family: 'Poppins', sans-serif;
 	line-height: 11px;
-	font-size: 9px;
+	font-size:8px;
 	transition: all .2s ease-in-out;
 }
 
@@ -968,9 +973,9 @@ body
 {
 	padding: 0;
 	text-align: left;
-	font-size: 9px;
+	font-size: 8px;
 	line-height: 9px;
-	overflow:scroll;
+	overflow:;
 }
 
 #pplText16
@@ -1101,6 +1106,9 @@ body
 	font-weight: 500;
 }
 
+
+
+
 #calOuter
 {
 	position: absolute;
@@ -1124,9 +1132,91 @@ body
 	margin-top: 100px;
 }
 
+#newsDiv
+{
+	height: 80vh;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#newsCol
+{
+	/*background: white;*/
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+#newsYear2016, #newsYear2017, #newsYear2018
+{
+	height: 10%;
+	color: #FAFAFA;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	padding-bottom: 20px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#newsYear2016
+{
+	background: #FFA726;
+}
+
+#newsYear2017
+{
+	background: #26C6DA;
+}
+
+#newsYear2018
+{
+	background: #ef5350;
+}
+
+#newsCont
+{
+	background: white;
+	height: 90%;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 15px;
+	text-align: left;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#newsOutline
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	transition: all .2s ease-in-out;
+}
+
+#newsOutline:hover
+{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all .2s ease-in-out;
+}
+
+#newsCont span
+{
+	opacity: .6;
+	padding-left: -10px;
+}
+
+#newsLink
+{
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+}
+
 #picsOuter
 {
-	height:100%;
+	height: 100%;
 	padding: 0;
 	margin: 0 auto;
 	border: 1px solid green;
@@ -1493,6 +1583,11 @@ svg.radial-progress text
 		padding-left: 10px;
 	}
 	
+	#contMain7
+	{
+		height: 100vh;
+	}
+	
 	#navRow
 	{
 		width: 100%;
@@ -1600,12 +1695,13 @@ svg.radial-progress text
 	#partnText1, #partnText2, #partnText3, #partnText4, #partnText5, #partnText6, #partnText7, #partnText8, #partnText9, #partnText10, #partnText11, #partnText12, #partnText13, #partnText14, #partnText15, #partnText16, #partnText17, #pplText1, #pplText2, #pplText3, #pplText4, #pplText5, #pplText6, #pplText7, #pplText8, #pplText9, #pplText10, #pplText11, #pplText12, #pplText13, #pplText14, #pplText15, #pplText16, #pplText17
 	{
 		padding-top: 8%;
-		font-size: 13px;
+		font-size: 12px;
 	}
 	
 	#partnPic1, #partnText1, #partnPic2, #partnText2, #partnPic3, #partnText3, #partnPic4, #partnText4, #partnPic5, #partnText5, #partnPic6, #partnText6, #partnPic7, #partnText7, #partnPic8, #partnText8, #partnPic9, #partnText9, #partnPic10, #partnText10, #partnPic11, #partnText11, #partnPic12, #partnText12, #partnPic13, #partnText13, #partnPic14, #partnText14, #partnPic15, #partnText15, #partnPic16, #partnText16, #partnPic17, #partnText17
 	{
 		padding: 0;
+		padding-top: 30px;
 		margin: 0 auto;
 		width: 100%;
 		height: 100%;
@@ -1624,11 +1720,14 @@ svg.radial-progress text
 	{
 		padding: 0;
 		text-align: left;
-		font-size: 15px;
+		font-size: 13px;
 		line-height: inherit;
 	}
 	
-	
+	#pplText1 a, #pplText2 a, #pplText3 a, #pplText4 a, #pplText5 a, #pplText6 a, #pplText7 a, #pplText8 a, #pplText9 a, #pplText10 a, #pplText11 a, #pplText12 a, #pplText13 a, #pplText14 a, #pplText15 a, #pplText16 a, #pplText17 a
+	{
+		font-size: 10px;
+	}
 	
 	#pplText4
 	{
@@ -1636,8 +1735,6 @@ svg.radial-progress text
 		line-height: 12px;
 		overflow-wrap: break-word;
 	}
-	
-	
 	
 	svg.radial-progress
 	{
@@ -1651,7 +1748,7 @@ svg.radial-progress text
 	#cal
 	{
 		width: 100%;
-		height: 570px;
+		height: 670px;
 		border: 0px;
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	}
@@ -1660,6 +1757,18 @@ svg.radial-progress text
 	{
 		padding-left: 30px;
 		padding-right: 30px;
+	}
+	
+	#newsYear2016, #newsYear2017, #newsYear2018
+	{
+		height: 10%;
+		color: #FAFAFA;
+		font-size: 25px;
+	}
+	
+	#newsCont
+	{
+		font-size: 18px;
 	}
 	
 	#statRow
