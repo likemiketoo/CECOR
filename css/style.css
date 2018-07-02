@@ -297,7 +297,7 @@ body
 
 #contMain7
 {
-	height: 80%;
+	height: 240vh;
 }
 
 #contMain3
@@ -1165,7 +1165,7 @@ body
 
 #newsDiv
 {
-	height: 80vh;
+	
 	padding-right: 20px;
 	padding-left: 20px;
 }
@@ -1178,15 +1178,31 @@ body
 	padding-bottom: 10px;
 }
 
-#newsYear2016, #newsYear2017, #newsYear2018
+#newsDivider
+{
+	padding: 0;
+}
+
+#newsYear2014, #newsYear2015, #newsYear2016, #newsYear2017, #newsYear2018
 {
 	height: 10%;
 	color: #FAFAFA;
 	font-size: 20px;
 	font-weight: 300;
 	letter-spacing: 5px;
+	
 	padding-bottom: 20px;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#newsYear2014
+{
+	background: #6A1B9A;
+}
+
+#newsYear2015
+{
+	background: #8BC34A;
 }
 
 #newsYear2016
@@ -1615,7 +1631,7 @@ svg.radial-progress text
 	
 	#contMain7
 	{
-		height: 100vh;
+		height: 200vh;
 	}
 	
 	#navRow
@@ -1794,11 +1810,16 @@ svg.radial-progress text
 		padding-right: 30px;
 	}
 	
-	#newsYear2016, #newsYear2017, #newsYear2018
+	#newsYear2014, #newsYear2015, #newsYear2016, #newsYear2017, #newsYear2018
 	{
 		height: 10%;
 		color: #FAFAFA;
 		font-size: 25px;
+	}
+	
+	#newsDiv
+	{
+		height: 80vh;
 	}
 	
 	#newsCont
