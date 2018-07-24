@@ -299,6 +299,16 @@ $('#picCol8').click(function()
 	});
 });
 
+$('#picCol9').click(function()
+{
+	$('#myModal9').css(
+	{
+		'display':'block',
+		'animation-name':'zoomIn',
+    	'animation-duration':'0.3s'
+	});
+});
+
 $(".close").click(function()
 {
 	$('#myModal1').css(
@@ -351,6 +361,13 @@ $(".close").click(function()
 	});
 	
 	$('#myModal8').css(
+	{
+		'display':'none',
+		'animation-name':'zoomOut',
+		'animation-duration':'0.3s'
+	});
+	
+	$('#myModal9').css(
 	{
 		'display':'none',
 		'animation-name':'zoomOut',
